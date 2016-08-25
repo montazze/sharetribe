@@ -1,12 +1,12 @@
 module FeatureTests
-  module Page
-    module AdminSidebar
+  module Section
+    module UserSettingsSidebar
       extend Capybara::DSL
 
       module_function
 
       def click_payments_link
-        sidebar.click_on("Payments")
+        sidebar.click_link("Payments")
       end
 
       def sidebar
