@@ -35,7 +35,11 @@ module FeatureTests
       end
 
       def click_admin_link
-        header.click_on("Admin")
+        header.click_link("Admin")
+      end
+
+      def click_post_a_new_listing
+        header.click_link("Post a new listing")
       end
 
       def header
